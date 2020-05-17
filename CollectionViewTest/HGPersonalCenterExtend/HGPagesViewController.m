@@ -186,8 +186,7 @@ static NSString * const HGPagesViewControllerCellIdentifier = @"HGPagesViewContr
 
 - (HGPopGestureCompatibleCollectionView *)collectionView {
     if (!_collectionView) {
-        _collectionView = [[HGPopGestureCompatibleCollectionView alloc] initWithFrame:CGRectZero
-                                                                 collectionViewLayout:[self layout]];
+        _collectionView = [[HGPopGestureCompatibleCollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[self layout]];
         _collectionView.backgroundColor = [UIColor clearColor];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;

@@ -11,7 +11,7 @@
 @interface HGNestedScrollViewController () <HGCollectionViewControllerDelegate>
 @property (nonatomic, strong) HGCenterBaseTableView *tableView;
 @property (nonatomic, strong) UIView *footerView;
-@property (nonatomic, strong) HGSegmentedPageViewController *segmentedPageViewController;
+@property (nonatomic, strong) HGCollectionViewController *segmentedPageViewController;
 @property (nonatomic) BOOL cannotScroll;
 @end
 
@@ -145,9 +145,9 @@
     return _footerView;
 }
 
-- (HGSegmentedPageViewController *)segmentedPageViewController {
+- (HGCollectionViewController *)segmentedPageViewController {
     if (!_segmentedPageViewController) {
-        _segmentedPageViewController = [[HGSegmentedPageViewController alloc] init];
+        _segmentedPageViewController = [[HGCollectionViewController alloc] init];
         _segmentedPageViewController.delegate = self;
     }
     return _segmentedPageViewController;

@@ -13,6 +13,6 @@
 #import "HGTitleView.h"
 #import "HGPageViewController.h"
 #import "HGPagesViewController.h"
-#import "HGSegmentedPageViewController.h"
+#import "HGCollectionViewController.h"
 
 #endif /* HGPersonalCenterExtend_h */

@@ -6,31 +6,39 @@
 //  Copyright © 2019 mint_bin. All rights reserved.
 //
 
-#import "HGSegmentedPageViewController.h"
+#import "HGCollectionViewController.h"
 #import "HGPagesViewController.h"
 
 #define kWidth self.view.frame.size.width
 
-@interface HGSegmentedPageViewController () <HGTitleViewDelegate, HGPagesViewControllerDelegate>
+@interface HGCollectionViewController () <HGTitleViewDelegate, HGPagesViewControllerDelegate>
 @property (nonatomic, strong) HGTitleView *titleView;
 @property (nonatomic, strong) HGPagesViewController *pagesViewController;
 @property (nonatomic) BOOL isDragging;
 @end
 
-@implementation HGSegmentedPageViewController
+@implementation HGCollectionViewController
 @synthesize originalPage = _originalPage;
 
-#pragma mark - Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor redColor];
+    [self configUI];
+}
+
+-(void)configUI{
+    _titleView = [[HGTitleView alloc] init];
+    _titleView.delegate = self;
     [self.view addSubview:self.titleView];
-    [self.view addSubview:self.pagesViewController.view];
-    
     [self.titleView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.left.right.equalTo(self.view);
         make.height.mas_equalTo(self.titleView.height);
     }];
+    
+    _pagesViewController = [[HGPagesViewController alloc] init];
+    _pagesViewController.delegate = self;
+    [self.view addSubview:self.pagesViewController.view];
+    
     [self.pagesViewController.view mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self.titleView.mas_bottom);
         make.left.right.bottom.equalTo(self.view);
@@ -102,23 +110,6 @@
 - (void)setOriginalPage:(NSInteger)originalPage {
     _originalPage = originalPage;
     self.titleView.originalIndex = originalPage;
-}
-
-#pragma mark - Getters
-- (HGTitleView *)titleView {
-    if (!_titleView) {
-        _titleView = [[HGTitleView alloc] init];
-        _titleView.delegate = self;
-    }
-    return _titleView;
-}
-
-- (HGPagesViewController *)pagesViewController {
-    if (!_pagesViewController) {
-        _pagesViewController = [[HGPagesViewController alloc] init];
-        _pagesViewController.delegate = self;
-    }
-    return _pagesViewController;
 }
 
 - (NSInteger)originalPage {

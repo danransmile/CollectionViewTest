@@ -13,5 +13,5 @@
 @property (nonatomic, strong, readonly) HGCenterBaseTableView *tableView;
 @property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong, readonly) UIView *footerView;
-@property (nonatomic, strong, readonly) HGSegmentedPageViewController *segmentedPageViewController;
+@property (nonatomic, strong, readonly) HGCollectionViewController *segmentedPageViewController;
 @end

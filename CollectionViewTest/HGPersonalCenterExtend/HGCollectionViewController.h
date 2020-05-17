@@ -9,17 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "HGTitleView.h"
 #import "HGPageViewController.h"
+#import "HGCollectionViewControllerDelegate.h"
 
-@protocol HGCollectionViewControllerDelegate <NSObject>
-- (void)collectionViewControllerLeaveTop;
-- (void)collectionViewControllerWillBeginDragging;
-- (void)collectionViewControllerDidEndDragging;
-@optional
-- (void)collectionViewControllerWillTransitionToPage:(NSInteger)page;
-- (void)collectionViewControllerDidTransitionToPage:(NSInteger)page;
-@end
-
-@interface HGSegmentedPageViewController : UIViewController
+@interface HGCollectionViewController : UIViewController
 @property (nonatomic, strong, readonly) HGTitleView *titleView;
 @property (nonatomic, copy) NSArray<HGPageViewController *> *pageViewControllers;
 @property (nonatomic) NSInteger originalPage;
