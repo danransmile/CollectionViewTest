@@ -3,32 +3,94 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 49;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		05A36824247048CC007E8010 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A36823247048CC007E8010 /* AppDelegate.m */; };
-		05A36827247048CC007E8010 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A36826247048CC007E8010 /* SceneDelegate.m */; };
-		05A3682A247048CC007E8010 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A36829247048CC007E8010 /* ViewController.m */; };
-		05A3682D247048CC007E8010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A3682B247048CC007E8010 /* Main.storyboard */; };
 		05A3682F247048CD007E8010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05A3682E247048CD007E8010 /* Assets.xcassets */; };
 		05A36832247048CD007E8010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05A36830247048CD007E8010 /* LaunchScreen.storyboard */; };
 		05A36835247048CD007E8010 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A36834247048CD007E8010 /* main.m */; };
+		05A3698A24704A5D007E8010 /* HGTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3698924704A5D007E8010 /* HGTitleView.m */; };
+		05A3699E24705562007E8010 /* HGCenterBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699324705561007E8010 /* HGCenterBaseTableView.m */; };
+		05A3699F24705562007E8010 /* HGPopGestureCompatibleCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699824705561007E8010 /* HGPopGestureCompatibleCollectionView.m */; };
+		05A369A024705562007E8010 /* HGSegmentedPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699924705561007E8010 /* HGSegmentedPageViewController.m */; };
+		05A369A124705562007E8010 /* HGPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699B24705562007E8010 /* HGPagesViewController.m */; };
+		05A369A224705562007E8010 /* HGPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699D24705562007E8010 /* HGPageViewController.m */; };
+		05A36A0B247059C7007E8010 /* HGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E1247059C6007E8010 /* HGFirstViewController.m */; };
+		05A36A0C247059C7007E8010 /* HGMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E3247059C6007E8010 /* HGMessageViewController.m */; };
+		05A36A0D247059C7007E8010 /* HGThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E4247059C6007E8010 /* HGThirdViewController.m */; };
+		05A36A0E247059C7007E8010 /* HGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E6247059C6007E8010 /* HGSecondViewController.m */; };
+		05A36A0F247059C7007E8010 /* HGPersonalCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E9247059C6007E8010 /* HGPersonalCenterViewController.m */; };
+		05A36A10247059C7007E8010 /* HGDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369ED247059C6007E8010 /* HGDeviceHelper.m */; };
+		05A36A11247059C7007E8010 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369EE247059C6007E8010 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		05A36A12247059C7007E8010 /* HGBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369F6247059C6007E8010 /* HGBaseViewController.m */; };
+		05A36A13247059C7007E8010 /* HGNestedScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369F9247059C6007E8010 /* HGNestedScrollViewController.m */; };
+		05A36A14247059C7007E8010 /* HGAlignmentAdjustButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369FC247059C7007E8010 /* HGAlignmentAdjustButton.m */; };
+		05A36A15247059C7007E8010 /* HGDoraemonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A369FE247059C7007E8010 /* HGDoraemonCell.xib */; };
+		05A36A16247059C7007E8010 /* HGDoraemonCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A36A00247059C7007E8010 /* HGDoraemonCollectionViewCell.m */; };
+		05A36A17247059C7007E8010 /* HGPersonalCenterHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A36A01247059C7007E8010 /* HGPersonalCenterHeaderView.m */; };
+		05A36A18247059C7007E8010 /* HGDoraemonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A36A02247059C7007E8010 /* HGDoraemonCell.m */; };
+		05A36A19247059C7007E8010 /* HGDoraemonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05A36A03247059C7007E8010 /* HGDoraemonCollectionViewCell.xib */; };
+		CF60E4C3C1318356958C0BAA /* libPods-CollectionViewTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A9F4B53767CD541EDA30C0 /* libPods-CollectionViewTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		05A3681F247048CC007E8010 /* CollectionViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05A36822247048CC007E8010 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05A36823247048CC007E8010 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		05A36825247048CC007E8010 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		05A36826247048CC007E8010 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		05A36828247048CC007E8010 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		05A36829247048CC007E8010 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		05A3682C247048CC007E8010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05A3682E247048CD007E8010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05A36831247048CD007E8010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05A36833247048CD007E8010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05A36834247048CD007E8010 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05A3698824704A5D007E8010 /* HGTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGTitleView.h; sourceTree = "<group>"; };
+		05A3698924704A5D007E8010 /* HGTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGTitleView.m; sourceTree = "<group>"; };
+		05A3698E24704AFB007E8010 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		05A3699324705561007E8010 /* HGCenterBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCenterBaseTableView.m; sourceTree = "<group>"; };
+		05A3699424705561007E8010 /* HGPopGestureCompatibleCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPopGestureCompatibleCollectionView.h; sourceTree = "<group>"; };
+		05A3699524705561007E8010 /* HGSegmentedPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGSegmentedPageViewController.h; sourceTree = "<group>"; };
+		05A3699624705561007E8010 /* HGPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPageViewController.h; sourceTree = "<group>"; };
+		05A3699724705561007E8010 /* HGPersonalCenterExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPersonalCenterExtend.h; sourceTree = "<group>"; };
+		05A3699824705561007E8010 /* HGPopGestureCompatibleCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPopGestureCompatibleCollectionView.m; sourceTree = "<group>"; };
+		05A3699924705561007E8010 /* HGSegmentedPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGSegmentedPageViewController.m; sourceTree = "<group>"; };
+		05A3699A24705561007E8010 /* HGPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPagesViewController.h; sourceTree = "<group>"; };
+		05A3699B24705562007E8010 /* HGPagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPagesViewController.m; sourceTree = "<group>"; };
+		05A3699C24705562007E8010 /* HGCenterBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCenterBaseTableView.h; sourceTree = "<group>"; };
+		05A3699D24705562007E8010 /* HGPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPageViewController.m; sourceTree = "<group>"; };
+		05A369E1247059C6007E8010 /* HGFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGFirstViewController.m; sourceTree = "<group>"; };
+		05A369E2247059C6007E8010 /* HGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGSecondViewController.h; sourceTree = "<group>"; };
+		05A369E3247059C6007E8010 /* HGMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGMessageViewController.m; sourceTree = "<group>"; };
+		05A369E4247059C6007E8010 /* HGThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGThirdViewController.m; sourceTree = "<group>"; };
+		05A369E5247059C6007E8010 /* HGMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGMessageViewController.h; sourceTree = "<group>"; };
+		05A369E6247059C6007E8010 /* HGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGSecondViewController.m; sourceTree = "<group>"; };
+		05A369E7247059C6007E8010 /* HGFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGFirstViewController.h; sourceTree = "<group>"; };
+		05A369E8247059C6007E8010 /* HGThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGThirdViewController.h; sourceTree = "<group>"; };
+		05A369E9247059C6007E8010 /* HGPersonalCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPersonalCenterViewController.m; sourceTree = "<group>"; };
+		05A369EA247059C6007E8010 /* HGPersonalCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPersonalCenterViewController.h; sourceTree = "<group>"; };
+		05A369EC247059C6007E8010 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		05A369ED247059C6007E8010 /* HGDeviceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGDeviceHelper.m; sourceTree = "<group>"; };
+		05A369EE247059C6007E8010 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		05A369EF247059C6007E8010 /* HGDeviceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGDeviceHelper.h; sourceTree = "<group>"; };
+		05A369F6247059C6007E8010 /* HGBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGBaseViewController.m; sourceTree = "<group>"; };
+		05A369F7247059C6007E8010 /* HGNestedScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGNestedScrollViewController.h; sourceTree = "<group>"; };
+		05A369F8247059C6007E8010 /* HGBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGBaseViewController.h; sourceTree = "<group>"; };
+		05A369F9247059C6007E8010 /* HGNestedScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGNestedScrollViewController.m; sourceTree = "<group>"; };
+		05A369FB247059C6007E8010 /* HGAlignmentAdjustButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGAlignmentAdjustButton.h; sourceTree = "<group>"; };
+		05A369FC247059C7007E8010 /* HGAlignmentAdjustButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGAlignmentAdjustButton.m; sourceTree = "<group>"; };
+		05A369FE247059C7007E8010 /* HGDoraemonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HGDoraemonCell.xib; sourceTree = "<group>"; };
+		05A369FF247059C7007E8010 /* HGDoraemonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGDoraemonCell.h; sourceTree = "<group>"; };
+		05A36A00247059C7007E8010 /* HGDoraemonCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGDoraemonCollectionViewCell.m; sourceTree = "<group>"; };
+		05A36A01247059C7007E8010 /* HGPersonalCenterHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPersonalCenterHeaderView.m; sourceTree = "<group>"; };
+		05A36A02247059C7007E8010 /* HGDoraemonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGDoraemonCell.m; sourceTree = "<group>"; };
+		05A36A03247059C7007E8010 /* HGDoraemonCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HGDoraemonCollectionViewCell.xib; sourceTree = "<group>"; };
+		05A36A04247059C7007E8010 /* HGPersonalCenterHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPersonalCenterHeaderView.h; sourceTree = "<group>"; };
+		05A36A05247059C7007E8010 /* HGDoraemonCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGDoraemonCollectionViewCell.h; sourceTree = "<group>"; };
+		05A36A1A24705FE8007E8010 /* HGTitleViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGTitleViewDelegate.h; sourceTree = "<group>"; };
+		05A36A1B2470608D007E8010 /* HGPagesViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGPagesViewControllerDelegate.h; sourceTree = "<group>"; };
+		05A36A1C247060C4007E8010 /* HGPageViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HGPageViewControllerDelegate.h; sourceTree = "<group>"; };
+		1B39ED65420F4392A10E91F2 /* Pods-CollectionViewTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewTest.debug.xcconfig"; path = "Target Support Files/Pods-CollectionViewTest/Pods-CollectionViewTest.debug.xcconfig"; sourceTree = "<group>"; };
+		76A9F4B53767CD541EDA30C0 /* libPods-CollectionViewTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CollectionViewTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB863D5C78CAD9C6A67A2F48 /* Pods-CollectionViewTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CollectionViewTest.release.xcconfig"; path = "Target Support Files/Pods-CollectionViewTest/Pods-CollectionViewTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF60E4C3C1318356958C0BAA /* libPods-CollectionViewTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +110,8 @@
 			children = (
 				05A36821247048CC007E8010 /* CollectionViewTest */,
 				05A36820247048CC007E8010 /* Products */,
+				0905F0FA87302D21E83D81A5 /* Pods */,
+				BD47A9DFB8D778E9F4CE7710 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,19 +126,148 @@
 		05A36821247048CC007E8010 /* CollectionViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				05A36822247048CC007E8010 /* AppDelegate.h */,
-				05A36823247048CC007E8010 /* AppDelegate.m */,
-				05A36825247048CC007E8010 /* SceneDelegate.h */,
-				05A36826247048CC007E8010 /* SceneDelegate.m */,
-				05A36828247048CC007E8010 /* ViewController.h */,
-				05A36829247048CC007E8010 /* ViewController.m */,
-				05A3682B247048CC007E8010 /* Main.storyboard */,
-				05A3682E247048CD007E8010 /* Assets.xcassets */,
-				05A36830247048CD007E8010 /* LaunchScreen.storyboard */,
-				05A36833247048CD007E8010 /* Info.plist */,
-				05A36834247048CD007E8010 /* main.m */,
+				05A369F4247059C6007E8010 /* Base */,
+				05A369DF247059C6007E8010 /* Controllers */,
+				05A3686B24704A35007E8010 /* HGPersonalCenterExtend */,
+				05A369FA247059C6007E8010 /* Modules */,
+				05A36992247050AB007E8010 /* SupportFiles */,
+				05A369EB247059C6007E8010 /* Tools */,
+				05A369FD247059C7007E8010 /* Views */,
 			);
 			path = CollectionViewTest;
+			sourceTree = "<group>";
+		};
+		05A3686B24704A35007E8010 /* HGPersonalCenterExtend */ = {
+			isa = PBXGroup;
+			children = (
+				05A3699C24705562007E8010 /* HGCenterBaseTableView.h */,
+				05A3699324705561007E8010 /* HGCenterBaseTableView.m */,
+				05A3699A24705561007E8010 /* HGPagesViewController.h */,
+				05A3699B24705562007E8010 /* HGPagesViewController.m */,
+				05A36A1B2470608D007E8010 /* HGPagesViewControllerDelegate.h */,
+				05A3699624705561007E8010 /* HGPageViewController.h */,
+				05A3699D24705562007E8010 /* HGPageViewController.m */,
+				05A36A1C247060C4007E8010 /* HGPageViewControllerDelegate.h */,
+				05A3699724705561007E8010 /* HGPersonalCenterExtend.h */,
+				05A3699424705561007E8010 /* HGPopGestureCompatibleCollectionView.h */,
+				05A3699824705561007E8010 /* HGPopGestureCompatibleCollectionView.m */,
+				05A3699524705561007E8010 /* HGSegmentedPageViewController.h */,
+				05A3699924705561007E8010 /* HGSegmentedPageViewController.m */,
+				05A3698824704A5D007E8010 /* HGTitleView.h */,
+				05A3698924704A5D007E8010 /* HGTitleView.m */,
+				05A36A1A24705FE8007E8010 /* HGTitleViewDelegate.h */,
+			);
+			path = HGPersonalCenterExtend;
+			sourceTree = "<group>";
+		};
+		05A36992247050AB007E8010 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				05A3698E24704AFB007E8010 /* PrefixHeader.pch */,
+				05A36833247048CD007E8010 /* Info.plist */,
+				05A36830247048CD007E8010 /* LaunchScreen.storyboard */,
+				05A36834247048CD007E8010 /* main.m */,
+				05A36822247048CC007E8010 /* AppDelegate.h */,
+				05A36823247048CC007E8010 /* AppDelegate.m */,
+				05A3682E247048CD007E8010 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		05A369DF247059C6007E8010 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05A369E0247059C6007E8010 /* ChildControllers */,
+				05A369EA247059C6007E8010 /* HGPersonalCenterViewController.h */,
+				05A369E9247059C6007E8010 /* HGPersonalCenterViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05A369E0247059C6007E8010 /* ChildControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05A369E7247059C6007E8010 /* HGFirstViewController.h */,
+				05A369E1247059C6007E8010 /* HGFirstViewController.m */,
+				05A369E5247059C6007E8010 /* HGMessageViewController.h */,
+				05A369E3247059C6007E8010 /* HGMessageViewController.m */,
+				05A369E2247059C6007E8010 /* HGSecondViewController.h */,
+				05A369E6247059C6007E8010 /* HGSecondViewController.m */,
+				05A369E8247059C6007E8010 /* HGThirdViewController.h */,
+				05A369E4247059C6007E8010 /* HGThirdViewController.m */,
+			);
+			path = ChildControllers;
+			sourceTree = "<group>";
+		};
+		05A369EB247059C6007E8010 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				05A369EF247059C6007E8010 /* HGDeviceHelper.h */,
+				05A369ED247059C6007E8010 /* HGDeviceHelper.m */,
+				05A369EC247059C6007E8010 /* UINavigationController+FDFullscreenPopGesture.h */,
+				05A369EE247059C6007E8010 /* UINavigationController+FDFullscreenPopGesture.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		05A369F4247059C6007E8010 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				05A369F5247059C6007E8010 /* Controllers */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		05A369F5247059C6007E8010 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05A369F8247059C6007E8010 /* HGBaseViewController.h */,
+				05A369F6247059C6007E8010 /* HGBaseViewController.m */,
+				05A369F7247059C6007E8010 /* HGNestedScrollViewController.h */,
+				05A369F9247059C6007E8010 /* HGNestedScrollViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		05A369FA247059C6007E8010 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				05A369FB247059C6007E8010 /* HGAlignmentAdjustButton.h */,
+				05A369FC247059C7007E8010 /* HGAlignmentAdjustButton.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		05A369FD247059C7007E8010 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05A369FE247059C7007E8010 /* HGDoraemonCell.xib */,
+				05A369FF247059C7007E8010 /* HGDoraemonCell.h */,
+				05A36A00247059C7007E8010 /* HGDoraemonCollectionViewCell.m */,
+				05A36A01247059C7007E8010 /* HGPersonalCenterHeaderView.m */,
+				05A36A02247059C7007E8010 /* HGDoraemonCell.m */,
+				05A36A03247059C7007E8010 /* HGDoraemonCollectionViewCell.xib */,
+				05A36A04247059C7007E8010 /* HGPersonalCenterHeaderView.h */,
+				05A36A05247059C7007E8010 /* HGDoraemonCollectionViewCell.h */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0905F0FA87302D21E83D81A5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B39ED65420F4392A10E91F2 /* Pods-CollectionViewTest.debug.xcconfig */,
+				FB863D5C78CAD9C6A67A2F48 /* Pods-CollectionViewTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD47A9DFB8D778E9F4CE7710 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76A9F4B53767CD541EDA30C0 /* libPods-CollectionViewTest.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 05A36838247048CD007E8010 /* Build configuration list for PBXNativeTarget "CollectionViewTest" */;
 			buildPhases = (
+				0A394A3C4D588C6E21DF7AD9 /* [CP] Check Pods Manifest.lock */,
 				05A3681B247048CC007E8010 /* Sources */,
 				05A3681C247048CC007E8010 /* Frameworks */,
 				05A3681D247048CC007E8010 /* Resources */,
@@ -106,12 +301,12 @@
 				ORGANIZATIONNAME = "刘艳芹";
 				TargetAttributes = {
 					05A3681E247048CC007E8010 = {
-						CreatedOnToolsVersion = 11.4.1;
+						CreatedOnToolsVersion = 9.0;
 					};
 				};
 			};
 			buildConfigurationList = 05A3681A247048CC007E8010 /* Build configuration list for PBXProject "CollectionViewTest" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 9.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -134,36 +329,71 @@
 			buildActionMask = 2147483647;
 			files = (
 				05A36832247048CD007E8010 /* LaunchScreen.storyboard in Resources */,
+				05A36A15247059C7007E8010 /* HGDoraemonCell.xib in Resources */,
+				05A36A19247059C7007E8010 /* HGDoraemonCollectionViewCell.xib in Resources */,
 				05A3682F247048CD007E8010 /* Assets.xcassets in Resources */,
-				05A3682D247048CC007E8010 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A394A3C4D588C6E21DF7AD9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CollectionViewTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		05A3681B247048CC007E8010 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05A3682A247048CC007E8010 /* ViewController.m in Sources */,
+				05A36A14247059C7007E8010 /* HGAlignmentAdjustButton.m in Sources */,
+				05A36A17247059C7007E8010 /* HGPersonalCenterHeaderView.m in Sources */,
 				05A36824247048CC007E8010 /* AppDelegate.m in Sources */,
+				05A36A0D247059C7007E8010 /* HGThirdViewController.m in Sources */,
+				05A36A0E247059C7007E8010 /* HGSecondViewController.m in Sources */,
+				05A3699E24705562007E8010 /* HGCenterBaseTableView.m in Sources */,
+				05A3699F24705562007E8010 /* HGPopGestureCompatibleCollectionView.m in Sources */,
+				05A36A10247059C7007E8010 /* HGDeviceHelper.m in Sources */,
+				05A3698A24704A5D007E8010 /* HGTitleView.m in Sources */,
+				05A36A16247059C7007E8010 /* HGDoraemonCollectionViewCell.m in Sources */,
 				05A36835247048CD007E8010 /* main.m in Sources */,
-				05A36827247048CC007E8010 /* SceneDelegate.m in Sources */,
+				05A36A0B247059C7007E8010 /* HGFirstViewController.m in Sources */,
+				05A36A18247059C7007E8010 /* HGDoraemonCell.m in Sources */,
+				05A36A11247059C7007E8010 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				05A36A13247059C7007E8010 /* HGNestedScrollViewController.m in Sources */,
+				05A36A0C247059C7007E8010 /* HGMessageViewController.m in Sources */,
+				05A36A0F247059C7007E8010 /* HGPersonalCenterViewController.m in Sources */,
+				05A369A124705562007E8010 /* HGPagesViewController.m in Sources */,
+				05A369A024705562007E8010 /* HGSegmentedPageViewController.m in Sources */,
+				05A369A224705562007E8010 /* HGPageViewController.m in Sources */,
+				05A36A12247059C7007E8010 /* HGBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		05A3682B247048CC007E8010 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05A3682C247048CC007E8010 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		05A36830247048CD007E8010 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -225,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,33 +517,35 @@
 		};
 		05A36839247048CD007E8010 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B39ED65420F4392A10E91F2 /* Pods-CollectionViewTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CollectionViewTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				DEVELOPMENT_TEAM = 8K9GHW69UL;
+				GCC_PREFIX_HEADER = "$(PROJECT)/SupportFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = CollectionViewTest/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Liu.CollectionViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		05A3683A247048CD007E8010 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB863D5C78CAD9C6A67A2F48 /* Pods-CollectionViewTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = CollectionViewTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				DEVELOPMENT_TEAM = 8K9GHW69UL;
+				GCC_PREFIX_HEADER = "$(PROJECT)/SupportFiles/PrefixHeader.pch";
+				INFOPLIST_FILE = CollectionViewTest/SupportFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Liu.CollectionViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

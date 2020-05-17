@@ -1,0 +1,52 @@
+
+
+//
+//  PrefixHeader.pch
+//  CollectionViewTest
+//
+//  Created by 刘艳芹 on 2020/5/17.
+//  Copyright © 2020 刘艳芹. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+#import <CoreFoundation/CoreFoundation.h>
+
+// 第三方
+#import "Masonry.h"
+#import "UINavigationController+FDFullscreenPopGesture.h"
+
+// 工程
+#import "HGBaseViewController.h"
+#import "HGAlignmentAdjustButton.h"
+#import "HGDeviceHelper.h"
+
+#import "HGPopGestureCompatibleCollectionView.h"
+#import "HGPersonalCenterExtend.h"
+
+
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+// device
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define STATUS_BAR_HEIGHT [UIApplication sharedApplication].statusBarFrame.size.height
+#define NAVIGATION_BAR_HEIGHT (IS_IPAD ? 50 : 44)
+#define IS_EXIST_FRINGE [HGDeviceHelper isExistFringe]
+#define IS_EXIST_JAW [HGDeviceHelper isExistJaw]
+#define SAFE_AREA_INSERTS_BOTTOM [HGDeviceHelper safeAreaInsetsBottom]
+#define SAFE_AREA_INSERTS_TOP [HGDeviceHelper safeAreaInsetsTop]
+#define TOP_BAR_HEIGHT (SAFE_AREA_INSERTS_TOP + NAVIGATION_BAR_HEIGHT)
+#define IS_IPAD ([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad)
+// color
+#define kRGBA(r, g, b, a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */
