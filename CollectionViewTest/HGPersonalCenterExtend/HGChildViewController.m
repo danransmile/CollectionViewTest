@@ -1,19 +1,19 @@
 //
-//  HGBasePageViewController.m
+//  HGChildViewController.m
 //  HGPersonalCenterExtend
 //
 //  Created by Arch on 2017/6/16.
 //  Copyright © 2017年 mint_bin. All rights reserved.
 //
 
-#import "HGPageViewController.h"
+#import "HGChildViewController.h"
 #import "HGTitleView.h"
 
-@interface HGPageViewController () <UIScrollViewDelegate>
+@interface HGChildViewController () <UIScrollViewDelegate>
 @property (nonatomic, strong) UIScrollView *scrollView;
 @end
 
-@implementation HGPageViewController
+@implementation HGChildViewController
 
 #pragma mark - Public Methods
 - (void)scrollToTop {

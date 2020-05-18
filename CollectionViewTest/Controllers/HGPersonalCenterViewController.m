@@ -62,7 +62,7 @@
     NSMutableArray *controllers = [NSMutableArray array];
     NSArray *titles = @[@"主页", @"动态", @"关注", @"粉丝"];
     for (int i = 0; i < titles.count; i++) {
-        HGPageViewController *controller;
+        HGChildViewController *controller;
         if (i % 3 == 0) {
             controller = [[HGThirdViewController alloc] init];
         } else if (i % 2 == 0) {

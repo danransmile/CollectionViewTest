@@ -18,10 +18,7 @@ static NSString *const ThirdViewControllerCollectionViewCellIdentifier = @"Third
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.view addSubview:self.collectionView];
-    [self.collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.view);
-    }];
+    [self collectionView];
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -44,18 +41,22 @@ static NSString *const ThirdViewControllerCollectionViewCellIdentifier = @"Third
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
-        flowLayout.minimumInteritemSpacing = 10;
+        flowLayout.minimumInteritemSpacing = 0;
         flowLayout.minimumLineSpacing = 10;
-        flowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 5, 10);
-        flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH - 30) / 2.0, 200);
+        flowLayout.sectionInset = UIEdgeInsetsMake(0, 20, 0, 20);
+        flowLayout.itemSize = CGSizeMake((SCREEN_WIDTH - 50) / 2.0, 200);
         flowLayout.scrollDirection = UICollectionViewScrollDirectionVertical;
         
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowLayout];
+        [self.view addSubview:_collectionView];
+           [_collectionView mas_makeConstraints:^(MASConstraintMaker *make) {
+               make.edges.equalTo(self.view);
+           }];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         // 解决categoryView在吸顶状态下，且collectionView的显示内容不满屏时，出现竖直方向滑动失效的问题
         _collectionView.alwaysBounceVertical = YES;
-        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [UIColor purpleColor];
         [_collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:ThirdViewControllerCollectionViewCellIdentifier];
     }
     return _collectionView;

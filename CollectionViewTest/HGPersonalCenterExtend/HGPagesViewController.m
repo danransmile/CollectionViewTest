@@ -7,14 +7,14 @@
 //
 
 #import "HGPagesViewController.h"
-#import "HGPageViewController.h"
+#import "HGChildViewController.h"
 #import "HGPopGestureCompatibleCollectionView.h"
 
 #define kWidth self.view.frame.size.width
 
 static NSString * const HGPagesViewControllerCellIdentifier = @"HGPagesViewControllerCell";
 
-@interface HGPagesViewController () <UICollectionViewDataSource, UICollectionViewDelegate, HGPageViewControllerDelegate>
+@interface HGPagesViewController () <UICollectionViewDataSource, UICollectionViewDelegate, HGCollectionViewControllerDelegate>
 @property (nonatomic, strong) HGPopGestureCompatibleCollectionView *collectionView;
 @property (nonatomic) BOOL isManualScroll; // 是否是手动滚动，区别于刚进入时滚动到指定的controller
 @property (nonatomic) CGFloat contentOffsetXWhenBeginDragging;
@@ -47,7 +47,7 @@ static NSString * const HGPagesViewControllerCellIdentifier = @"HGPagesViewContr
 
 #pragma mark - Public Methods
 - (void)makeViewControllersScrollToTop {
-    [self.viewControllers enumerateObjectsUsingBlock:^(HGPageViewController * _Nonnull controller, NSUInteger index, BOOL * _Nonnull stop) {
+    [self.viewControllers enumerateObjectsUsingBlock:^(HGChildViewController * _Nonnull controller, NSUInteger index, BOOL * _Nonnull stop) {
         [controller scrollToTop];
     }];
 }
@@ -84,7 +84,7 @@ static NSString * const HGPagesViewControllerCellIdentifier = @"HGPagesViewContr
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HGPagesViewControllerCellIdentifier forIndexPath:indexPath];
-    HGPageViewController *viewController = self.viewControllers[indexPath.item];
+    HGChildViewController *viewController = self.viewControllers[indexPath.item];
     [self addChildViewController:viewController];
     [cell.contentView addSubview:viewController.view];
     [viewController didMoveToParentViewController:self];
@@ -200,9 +200,9 @@ static NSString * const HGPagesViewControllerCellIdentifier = @"HGPagesViewContr
 }
 
 #pragma mark - Setters
-- (void)setViewControllers:(NSArray<HGPageViewController *> *)viewControllers {
+- (void)setViewControllers:(NSArray<HGChildViewController *> *)viewControllers {
     _viewControllers = viewControllers;
-    [self.viewControllers enumerateObjectsUsingBlock:^(HGPageViewController * _Nonnull pageViewController, NSUInteger idx, BOOL * _Nonnull stop) {
+    [self.viewControllers enumerateObjectsUsingBlock:^(HGChildViewController * _Nonnull pageViewController, NSUInteger idx, BOOL * _Nonnull stop) {
         pageViewController.delegate = self;
     }];
     [self.collectionView reloadData];
@@ -216,7 +216,7 @@ static NSString * const HGPagesViewControllerCellIdentifier = @"HGPagesViewContr
     [self setSelectedPage:selectedPage animated:self.isManualScroll && (labs(_selectedPage - selectedPage) == 1)];
 }
 
-- (HGPageViewController *)selectedPageViewController {
+- (HGChildViewController *)selectedPageViewController {
     return self.viewControllers[self.selectedPage];
 }
 

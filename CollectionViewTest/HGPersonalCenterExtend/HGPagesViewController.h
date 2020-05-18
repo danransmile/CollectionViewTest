@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HGPageViewController.h"
+#import "HGChildViewController.h"
 #import "HGPagesViewControllerDelegate.h"
 
 @interface HGPagesViewController : UIViewController
 @property (nonatomic, strong, readonly) HGPopGestureCompatibleCollectionView *collectionView;
-@property (nonatomic, copy) NSArray<HGPageViewController *> *viewControllers;
+@property (nonatomic, copy) NSArray<HGChildViewController *> *viewControllers;
 @property (nonatomic) NSInteger originalPage;
 @property (nonatomic, readonly) NSInteger selectedPage;
-@property (nonatomic, strong, readonly) HGPageViewController *selectedPageViewController;
+@property (nonatomic, strong, readonly) HGChildViewController *selectedPageViewController;
 @property(nonatomic, weak) id<HGPagesViewControllerDelegate> delegate;
 
 - (void)makeViewControllersScrollToTop;

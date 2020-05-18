@@ -6,8 +6,8 @@
 //  Copyright © 2017年 mint_bin. All rights reserved.
 //
 
-#import "HGPageViewController.h"
+#import "HGChildViewController.h"
 
-@interface HGThirdViewController : HGPageViewController
+@interface HGThirdViewController : HGChildViewController
 
 @end

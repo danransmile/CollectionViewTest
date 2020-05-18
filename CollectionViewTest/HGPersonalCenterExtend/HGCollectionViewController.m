@@ -1,5 +1,5 @@
 //
-//  HGSegmentedPageViewController.m
+//  HGCollectionViewController.m
 //  HGPersonalCenterExtend
 //
 //  Created by Arch on 2019/1/3.
@@ -51,7 +51,7 @@
 }
 
 - (void)makePageViewControllersScrollState:(BOOL)canScroll {
-    [self.pageViewControllers enumerateObjectsUsingBlock:^(HGPageViewController * _Nonnull controller, NSUInteger index, BOOL * _Nonnull stop) {
+    [self.pageViewControllers enumerateObjectsUsingBlock:^(HGChildViewController * _Nonnull controller, NSUInteger index, BOOL * _Nonnull stop) {
         controller.canScroll = canScroll;
     }];
 }
@@ -102,7 +102,7 @@
 }
 
 #pragma mark - Setters
-- (void)setPageViewControllers:(NSArray<HGPageViewController *> *)pageViewControllers {
+- (void)setPageViewControllers:(NSArray<HGChildViewController *> *)pageViewControllers {
     _pageViewControllers = pageViewControllers;
     self.pagesViewController.viewControllers = pageViewControllers;
 }
@@ -120,7 +120,7 @@
     return self.titleView.selectedIndex;
 }
 
-- (HGPageViewController *)selectedPageViewController {
+- (HGChildViewController *)selectedPageViewController {
     return self.pagesViewController.selectedPageViewController;
 }
 

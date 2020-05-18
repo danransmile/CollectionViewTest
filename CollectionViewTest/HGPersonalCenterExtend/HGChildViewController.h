@@ -1,5 +1,5 @@
 //
-//  HGPageViewController.h
+//  HGChildViewController.h
 //  HGPersonalCenterExtend
 //
 //  Created by Arch on 2017/6/16.
@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HGPageViewControllerDelegate.h"
+#import "HGCollectionViewControllerDelegate.h"
 
-@interface HGPageViewController : UIViewController
+@interface HGChildViewController : UIViewController
 @property (nonatomic) BOOL canScroll;
-@property (nonatomic, weak) id<HGPageViewControllerDelegate> delegate;
+@property (nonatomic, weak) id<HGCollectionViewControllerDelegate> delegate;
 @property (nonatomic) NSInteger pageIndex;
 
 - (void)scrollToTop;

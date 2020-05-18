@@ -11,7 +11,7 @@
 
 #import "HGCenterBaseTableView.h"
 #import "HGTitleView.h"
-#import "HGPageViewController.h"
+#import "HGChildViewController.h"
 #import "HGPagesViewController.h"
 #import "HGCollectionViewController.h"
 

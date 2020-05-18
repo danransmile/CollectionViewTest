@@ -16,7 +16,7 @@
 		05A3699F24705562007E8010 /* HGPopGestureCompatibleCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699824705561007E8010 /* HGPopGestureCompatibleCollectionView.m */; };
 		05A369A024705562007E8010 /* HGCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699924705561007E8010 /* HGCollectionViewController.m */; };
 		05A369A124705562007E8010 /* HGPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699B24705562007E8010 /* HGPagesViewController.m */; };
-		05A369A224705562007E8010 /* HGPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699D24705562007E8010 /* HGPageViewController.m */; };
+		05A369A224705562007E8010 /* HGChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A3699D24705562007E8010 /* HGChildViewController.m */; };
 		05A36A0B247059C7007E8010 /* HGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E1247059C6007E8010 /* HGFirstViewController.m */; };
 		05A36A0C247059C7007E8010 /* HGMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E3247059C6007E8010 /* HGMessageViewController.m */; };
 		05A36A0D247059C7007E8010 /* HGThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A369E4247059C6007E8010 /* HGThirdViewController.m */; };
@@ -49,14 +49,14 @@
 		05A3699324705561007E8010 /* HGCenterBaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCenterBaseTableView.m; sourceTree = "<group>"; };
 		05A3699424705561007E8010 /* HGPopGestureCompatibleCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPopGestureCompatibleCollectionView.h; sourceTree = "<group>"; };
 		05A3699524705561007E8010 /* HGCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCollectionViewController.h; sourceTree = "<group>"; };
-		05A3699624705561007E8010 /* HGPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPageViewController.h; sourceTree = "<group>"; };
+		05A3699624705561007E8010 /* HGChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGChildViewController.h; sourceTree = "<group>"; };
 		05A3699724705561007E8010 /* HGPersonalCenterExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPersonalCenterExtend.h; sourceTree = "<group>"; };
 		05A3699824705561007E8010 /* HGPopGestureCompatibleCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPopGestureCompatibleCollectionView.m; sourceTree = "<group>"; };
 		05A3699924705561007E8010 /* HGCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCollectionViewController.m; sourceTree = "<group>"; };
 		05A3699A24705561007E8010 /* HGPagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPagesViewController.h; sourceTree = "<group>"; };
 		05A3699B24705562007E8010 /* HGPagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPagesViewController.m; sourceTree = "<group>"; };
 		05A3699C24705562007E8010 /* HGCenterBaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCenterBaseTableView.h; sourceTree = "<group>"; };
-		05A3699D24705562007E8010 /* HGPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGPageViewController.m; sourceTree = "<group>"; };
+		05A3699D24705562007E8010 /* HGChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGChildViewController.m; sourceTree = "<group>"; };
 		05A369E1247059C6007E8010 /* HGFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGFirstViewController.m; sourceTree = "<group>"; };
 		05A369E2247059C6007E8010 /* HGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGSecondViewController.h; sourceTree = "<group>"; };
 		05A369E3247059C6007E8010 /* HGMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGMessageViewController.m; sourceTree = "<group>"; };
@@ -143,16 +143,15 @@
 			children = (
 				05A3699C24705562007E8010 /* HGCenterBaseTableView.h */,
 				05A3699324705561007E8010 /* HGCenterBaseTableView.m */,
+				05A3699624705561007E8010 /* HGChildViewController.h */,
+				05A3699D24705562007E8010 /* HGChildViewController.m */,
 				05A3699524705561007E8010 /* HGCollectionViewController.h */,
 				05A3699924705561007E8010 /* HGCollectionViewController.m */,
 				05B1D70B2471205E0035F06D /* HGCollectionViewControllerDelegate.h */,
 				05A3699A24705561007E8010 /* HGPagesViewController.h */,
 				05A3699B24705562007E8010 /* HGPagesViewController.m */,
 				05A36A1B2470608D007E8010 /* HGPagesViewControllerDelegate.h */,
-				05A3699624705561007E8010 /* HGPageViewController.h */,
-				05A3699D24705562007E8010 /* HGPageViewController.m */,
 				05A36A1C247060C4007E8010 /* HGPageViewControllerDelegate.h */,
-				05A3699724705561007E8010 /* HGPersonalCenterExtend.h */,
 				05A3699424705561007E8010 /* HGPopGestureCompatibleCollectionView.h */,
 				05A3699824705561007E8010 /* HGPopGestureCompatibleCollectionView.m */,
 				05A3698824704A5D007E8010 /* HGTitleView.h */,
@@ -165,6 +164,7 @@
 		05A36992247050AB007E8010 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				05A3699724705561007E8010 /* HGPersonalCenterExtend.h */,
 				05A3698E24704AFB007E8010 /* PrefixHeader.pch */,
 				05A36833247048CD007E8010 /* Info.plist */,
 				05A36830247048CD007E8010 /* LaunchScreen.storyboard */,
@@ -388,7 +388,7 @@
 				05A36A0F247059C7007E8010 /* HGPersonalCenterViewController.m in Sources */,
 				05A369A124705562007E8010 /* HGPagesViewController.m in Sources */,
 				05A369A024705562007E8010 /* HGCollectionViewController.m in Sources */,
-				05A369A224705562007E8010 /* HGPageViewController.m in Sources */,
+				05A369A224705562007E8010 /* HGChildViewController.m in Sources */,
 				05A36A12247059C7007E8010 /* HGBaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -46,18 +46,18 @@
 }
 
 - (void)changeNavigationBarAlpha {
-    CGFloat alpha = 0;
-    CGFloat topBarHeight = HGDeviceHelper.safeAreaInsetsTop + HGDeviceHelper.navigationBarHeight;
-    if (self.tableView.contentOffset.y - (self.headerView.frame.size.height - topBarHeight) >= FLT_EPSILON) {
-        alpha = 1;
-    } else {
-        if ((self.headerView.frame.size.height == topBarHeight)) {
-            alpha = 0;
-        } else {
-            alpha = self.tableView.contentOffset.y / (self.headerView.frame.size.height - topBarHeight);
-        }
-    }
-    [self setNavigationBarAlpha:alpha];
+//    CGFloat alpha = 0;
+//    CGFloat topBarHeight = HGDeviceHelper.safeAreaInsetsTop + HGDeviceHelper.navigationBarHeight;
+//    if (self.tableView.contentOffset.y - (self.headerView.frame.size.height - topBarHeight) >= FLT_EPSILON) {
+//        alpha = 1;
+//    } else {
+//        if ((self.headerView.frame.size.height == topBarHeight)) {
+//            alpha = 0;
+//        } else {
+//            alpha = self.tableView.contentOffset.y / (self.headerView.frame.size.height - topBarHeight);
+//        }
+//    }
+//    [self setNavigationBarAlpha:alpha];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -123,7 +123,7 @@
     if (!_tableView) {
         _tableView = [[HGCenterBaseTableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
         _tableView.tableFooterView = self.footerView;
-        _tableView.tableHeaderView = self.headerView;
+//        _tableView.tableHeaderView = self.headerView;
         _tableView.backgroundColor = [UIColor whiteColor];
     }
     return _tableView;

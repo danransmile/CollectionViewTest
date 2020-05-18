@@ -1,5 +1,5 @@
 //
-//  HGPageViewControllerDelegate.h
+//  HGCollectionViewControllerDelegate.h
 //  CollectionViewTest
 //
 //  Created by 刘艳芹 on 2020/5/17.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol HGPageViewControllerDelegate <NSObject>
+@protocol HGCollectionViewControllerDelegate <NSObject>
 - (void)pageViewControllerLeaveTop;
 @end
 NS_ASSUME_NONNULL_END
